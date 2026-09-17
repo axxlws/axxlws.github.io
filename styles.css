@@ -135,6 +135,18 @@ h2 { margin-bottom: 0; font-size: clamp(2.35rem, 4.2vw, 4.15rem); line-height: 1
 .palu-visual img { object-position: center; }
 .baleendah-visual img { object-position: center; }
 .guide-visual img { object-position: center 48%; }
+.wanam-visual { background: #f7fafb; }
+.wanam-visual::after { display: none; }
+.wanam-visual img { object-fit: contain; padding: 13px; }
+.wanam-visual .visual-label { color: var(--ink); border-color: #c5d5db; background: rgba(255,255,255,.94); }
+.wanam-card .project-body > p { max-width: 650px; }
+.wanam-method-note { margin: 16px 0 0; padding: 12px 15px; border-left: 3px solid var(--sea); background: #f1f5f4; font-size: 13px !important; line-height: 1.55; }
+.wanam-method-note strong { color: var(--ink); }
+.wanam-result { grid-column: 1 / -1; margin: 0; padding: 26px 32px 24px; border-top: 1px solid var(--line); background: #fff; }
+.wanam-result img { width: 100%; height: auto; max-height: 580px; object-fit: contain; }
+.wanam-result figcaption { margin: 8px auto 0; max-width: 960px; color: var(--ink-soft); font-size: 13px; line-height: 1.55; text-align: center; }
+.wanam-figure-link { display: table; margin: 12px auto 0; border-bottom: 1px solid currentColor; color: var(--sea); font-size: 14px; font-weight: 700; }
+.wanam-figure-link:hover, .wanam-figure-link:focus-visible { color: var(--ink); }
 .tds-visual { min-height: 360px; background: var(--paper); }
 .tds-visual::after { display: none; }
 .tds-gallery { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%; height: 100%; padding: 12px; }
@@ -197,6 +209,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.35rem, 4.2vw, 4.15rem); line-height: 1
   .project-card.featured { display: flex; }
   .project-card.tds-card { display: flex; }
   .project-card.featured .project-visual { min-height: 300px; }
+  .wanam-result { width: 100%; }
   .credential-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .availability-card { grid-column: 1 / -1; min-height: 210px; }
   .expertise-grid { grid-template-columns: repeat(2, 1fr); }
@@ -234,6 +247,9 @@ h2 { margin-bottom: 0; font-size: clamp(2.35rem, 4.2vw, 4.15rem); line-height: 1
   .experience-timeline h3 { font-size: 22px; }
   .project-grid { grid-template-columns: 1fr; }
   .project-visual { min-height: 260px; }
+  .wanam-visual img { padding: 8px; }
+  .wanam-result { padding: 18px 10px; }
+  .wanam-result img { max-height: none; }
   .tds-visual { min-height: 785px; }
   .tds-gallery { grid-template-columns: 1fr; }
   .project-body { padding: 23px; }

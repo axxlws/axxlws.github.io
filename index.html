@@ -58,7 +58,7 @@
           </div>
           <div class="hero-facts" aria-label="Ringkasan profil">
             <div><strong>S2</strong><span>Teknik Air Tanah, ITB</span></div>
-            <div><strong>7</strong><span>Proyek & karya terpilih</span></div>
+            <div><strong>8</strong><span>Proyek & karya terpilih</span></div>
             <div><strong>6+</strong><span>Wilayah penugasan lapangan</span></div>
           </div>
         </div>
@@ -114,7 +114,7 @@
               <div>
                 <h3>Magister Teknik Air Tanah</h3>
                 <p>Institut Teknologi Bandung · IPK 3,83/4,00</p>
-                <small>Tesis telah dipertahankan.</small>
+                <small>Lulus 28 Juli 2026.</small>
               </div>
             </div>
             <div class="education-item">
@@ -137,11 +137,11 @@
             </ul>
           </article>
 
-          <aside class="availability-card" aria-label="Ketersediaan kerja">
-            <p class="credential-label">Ketersediaan</p>
-            <strong>Mulai Agustus<br />2026</strong>
-            <p>Siap untuk penugasan hidrologi, sumber daya air, hidrogeologi, dan kajian lingkungan.</p>
-            <span>Bersedia ditempatkan di seluruh Indonesia</span>
+          <aside class="availability-card" aria-label="Penugasan saat ini">
+            <p class="credential-label">Penugasan saat ini</p>
+            <strong>Balai Teknik<br />Pantai</strong>
+            <p>Peserta MagangHub Kemnaker sejak 10 Agustus 2026, mendukung analisis hidrologi dan hidraulika muara sungai.</p>
+            <span>Gerokgak, Buleleng, Bali</span>
           </aside>
         </div>
       </section>
@@ -160,6 +160,15 @@
           </div>
 
           <ol class="experience-timeline">
+            <li>
+              <time datetime="2026-08">Agu 2026–kini</time>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <article>
+                <p class="experience-place">Balai Teknik Pantai, Ditjen SDA · Buleleng, Bali</p>
+                <h3>Peserta Magang — Analisis Hidrologi dan Hidraulika Muara Sungai</h3>
+                <p>Mengerjakan analisis DAS, pemodelan hujan–aliran, dan estimasi debit andalan pada lima outlet di Wanam, Papua.</p>
+              </article>
+            </li>
             <li>
               <time datetime="2026-01">Jan 2026</time>
               <div class="timeline-marker" aria-hidden="true"></div>
@@ -217,19 +226,55 @@
               <h2 id="projects-title">Karya yang menunjukkan <em>kedalaman metode</em> dan keluaran yang dapat ditindaklanjuti.</h2>
             </div>
             <p>
-              Setiap studi kasus menampilkan peran, metode, dan pembelajaran teknis saya. Proyek profesional
-              dikerjakan dalam tim; ruang lingkup kontribusi saya dijelaskan secara spesifik.
+              Setiap studi kasus menampilkan peran, metode, dan keluaran saya. Pekerjaan mandiri dibedakan
+              dari kontribusi dalam proyek tim.
             </p>
           </div>
 
           <div class="project-grid">
+            <article class="project-card featured wanam-card">
+              <div class="project-visual wanam-visual">
+                <img src="assets/wanam-five-outlets-map.svg" alt="Peta batas lima DAS dan titik outlet komputasi HEC-HMS di Wanam, Papua" loading="lazy" />
+                <span class="visual-label">GIS / 5 OUTLET</span>
+              </div>
+              <div class="project-body">
+                <div class="project-meta"><span>01</span><span>2026 · Balai Teknik Pantai · Mandiri</span></div>
+                <h3>Estimasi Debit Andalan Lima Outlet di Wanam, Papua</h3>
+                <p>
+                  Analisis hujan–aliran untuk wilayah tanpa pos hujan dan debit setempat. Saya mengolah
+                  data hujan Sithala, menyiapkan parameter DAS, membangun model HEC-HMS, dan menyusun
+                  kurva durasi aliran dari seri harian 2013–2023 untuk mengestimasi Q80.
+                </p>
+                <div class="contribution">
+                  <strong>Peran dan metode saya</strong>
+                  <ul>
+                    <li>Melakukan deliniasi lima DAS, pengolahan hujan, dan pemodelan debit pada masing-masing outlet.</li>
+                    <li>Memisahkan baseflow dari debit observasi DAS Buda menggunakan filter Eckhardt.</li>
+                    <li>Memindahkan seri baseflow analog dengan rasio luas DAS, lalu menganalisis debit gabungan dan Q80.</li>
+                  </ul>
+                </div>
+                <p class="wanam-method-note">
+                  <strong>Asumsi skenario.</strong> Segmen baseflow DAS Buda 2004–2014 dipasangkan
+                  menurut urutan hari dengan seri model 2013–2023, bukan menurut tanggal observasi yang
+                  sama. Angka Q80 adalah estimasi skenario, bukan debit terukur atau hasil validasi
+                  terhadap pos debit di Wanam.
+                </p>
+                <div class="tags"><span>HEC-HMS</span><span>Sithala</span><span>Eckhardt RDF</span><span>QGIS</span><span>Q80</span></div>
+              </div>
+              <figure class="wanam-result">
+                <img src="assets/wanam-five-outlets-fdc.svg" alt="Kurva durasi aliran lima outlet, dengan Q80 masing-masing 16,83; 13,85; 0,62; 13,32; dan 14,72 meter kubik per detik" loading="lazy" />
+                <figcaption>Kurva durasi dari seri debit hasil HEC-HMS dan skenario baseflow analog. Setiap kurva memuat 4.017 nilai harian; sumbu debit menggunakan skala logaritmik.</figcaption>
+                <a class="wanam-figure-link" href="assets/wanam-five-outlets-fdc.svg" target="_blank" rel="noopener">Buka grafik ukuran penuh <span aria-hidden="true">↗</span></a>
+              </figure>
+            </article>
+
             <article class="project-card featured">
               <div class="project-visual maipark-visual">
                 <img src="assets/maipark-hecras-t100.png" alt="Peta kedalaman genangan hasil simulasi HEC-RAS 2D untuk periode ulang 100 tahun di Jakarta" />
                 <span class="visual-label">HEC-RAS 2D / Flood Hazard</span>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>01</span><span>2024–2025 · Proyek tim</span></div>
+                <div class="project-meta"><span>02</span><span>2024–2025 · Proyek tim</span></div>
                 <h3>Rekalibrasi Model Banjir dan Rekonstruksi Banjir Besar Jabodetabek</h3>
                 <p>
                   Pengembangan analisis hidrologi dan hidraulika untuk mendukung pemetaan bahaya banjir,
@@ -253,7 +298,7 @@
                 <span class="visual-label">SWAT+ / Water Balance</span>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>02</span><span>2025–2026 · Tesis mandiri</span></div>
+                <div class="project-meta"><span>03</span><span>2025–2026 · Tesis mandiri</span></div>
                 <h3>Estimasi Baseflow Berbasis Model Fisik SWAT+ di Sub-DAS Citarum Hulu</h3>
                 <p>
                   Tesis yang membangun dua konfigurasi SWAT+ untuk menghasilkan estimasi baseflow berbasis fisik
@@ -274,7 +319,7 @@
                 <span class="visual-label">HEC-HMS / Calibration</span>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>03</span><span>2024–2025 · Skripsi mandiri</span></div>
+                <div class="project-meta"><span>04</span><span>2024–2025 · Skripsi mandiri</span></div>
                 <h3>Simulasi dan Optimasi Model Hidrologi HEC-HMS untuk Banjir Sungai Palu</h3>
                 <p>
                   Pemodelan kejadian banjir 6 September 2022, mulai dari karakterisasi DAS dan hujan hingga
@@ -299,7 +344,7 @@
                 <span class="visual-label">HEC-HMS / Design Flood</span>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>04</span><span>2025 · Proyek tim</span></div>
+                <div class="project-meta"><span>05</span><span>2025 · Proyek tim</span></div>
                 <h3>Hydrology Survey untuk Infrastruktur Genting FLNG</h3>
                 <p>
                   Dukungan pemodelan hidrologi untuk penilaian kondisi eksisting, skenario cut-and-fill,
@@ -322,7 +367,7 @@
                 <span class="visual-label">HEC-RAS 2D / Inundation</span>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>05</span><span>Studi akademik · Proyek kelompok</span></div>
+                <div class="project-meta"><span>06</span><span>Studi akademik · Proyek kelompok</span></div>
                 <h3>Pemodelan Genangan Banjir 2D Baleendah</h3>
                 <p>
                   Simulasi hidraulika dua dimensi untuk memetakan area rendaman dan membandingkan keluaran
@@ -345,7 +390,7 @@
                 <span class="visual-label">GUIDELINE / AWLR</span>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>06</span><span>Pedoman teknis · Mandiri</span></div>
+                <div class="project-meta"><span>07</span><span>Pedoman teknis · Mandiri</span></div>
                 <h3>Pedoman Teknis Sumur Pantau dan Automatic Water Level Recorder</h3>
                 <p>
                   Pedoman operasional yang merangkum perencanaan, pembangunan, QA/QC, pemasangan AWLR,
@@ -377,7 +422,7 @@
                 </div>
               </div>
               <div class="project-body">
-                <div class="project-meta"><span>07</span><span>Studi pesisir · Tiga wilayah</span></div>
+                <div class="project-meta"><span>08</span><span>Studi pesisir · Tiga wilayah</span></div>
                 <h3>Kajian TDS Air Tanah Pesisir Pantura Jawa</h3>
                 <p>
                   Tiga peta TDS air tanah dalam dari Subang, Indramayu, dan Bekasi yang menunjukkan cara
@@ -457,7 +502,7 @@
             <a href="mailto:axelsib29@gmail.com">axelsib29@gmail.com <span aria-hidden="true">↗</span></a>
             <a href="tel:+6281398357822">+62 813-9835-7822 <span aria-hidden="true">↗</span></a>
             <a href="https://www.linkedin.com/in/axel-widjanarko-sibarani" target="_blank" rel="noreferrer">linkedin.com/in/axel-widjanarko-sibarani <span aria-hidden="true">↗</span></a>
-            <p>Cileungsi, Kabupaten Bogor · Bersedia ditempatkan di seluruh Indonesia</p>
+            <p>Gerokgak, Kabupaten Buleleng, Bali · Bersedia ditempatkan di seluruh Indonesia</p>
           </div>
         </div>
       </section>
