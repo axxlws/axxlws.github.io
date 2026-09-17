@@ -140,13 +140,23 @@ h2 { margin-bottom: 0; font-size: clamp(2.35rem, 4.2vw, 4.15rem); line-height: 1
 .wanam-visual img { object-fit: contain; padding: 13px; }
 .wanam-visual .visual-label { color: var(--ink); border-color: #c5d5db; background: rgba(255,255,255,.94); }
 .wanam-card .project-body > p { max-width: 650px; }
-.wanam-method-note { margin: 16px 0 0; padding: 12px 15px; border-left: 3px solid var(--sea); background: #f1f5f4; font-size: 13px !important; line-height: 1.55; }
-.wanam-method-note strong { color: var(--ink); }
+.project-method-note { margin: 16px 0 0; padding: 12px 15px; border-left: 3px solid var(--sea); background: #f1f5f4; font-size: 13px !important; line-height: 1.55; }
+.project-method-note strong { color: var(--ink); }
 .wanam-result { grid-column: 1 / -1; margin: 0; padding: 26px 32px 24px; border-top: 1px solid var(--line); background: #fff; }
 .wanam-result img { width: 100%; height: auto; max-height: 580px; object-fit: contain; }
 .wanam-result figcaption { margin: 8px auto 0; max-width: 960px; color: var(--ink-soft); font-size: 13px; line-height: 1.55; text-align: center; }
 .wanam-figure-link { display: table; margin: 12px auto 0; border-bottom: 1px solid currentColor; color: var(--sea); font-size: 14px; font-weight: 700; }
 .wanam-figure-link:hover, .wanam-figure-link:focus-visible { color: var(--ink); }
+.modflow-visual { background: var(--white); }
+.modflow-visual::after { display: none; }
+.modflow-visual img { object-fit: contain; padding: 16px; }
+.modflow-visual .visual-label { color: var(--ink); border-color: #c5d5db; background: rgba(255,255,255,.94); }
+.modflow-results { grid-column: 1 / -1; display: grid; grid-template-columns: .8fr 1.2fr; gap: 16px; padding: 22px; border-top: 1px solid var(--line); }
+.modflow-results figure { min-width: 0; margin: 0; border: 1px solid var(--line); background: #f7fafb; }
+.modflow-results a { display: flex; height: 300px; align-items: center; justify-content: center; overflow: hidden; }
+.modflow-results img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; padding: 10px; object-fit: contain; }
+.modflow-results figcaption { padding: 0 16px 14px; color: var(--ink-soft); font-size: 12px; line-height: 1.5; text-align: center; }
+.modflow-results a:hover img, .modflow-results a:focus-visible img { outline: 2px solid var(--sea); outline-offset: -4px; }
 .tds-visual { min-height: 360px; background: var(--paper); }
 .tds-visual::after { display: none; }
 .tds-gallery { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%; height: 100%; padding: 12px; }
@@ -210,6 +220,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.35rem, 4.2vw, 4.15rem); line-height: 1
   .project-card.tds-card { display: flex; }
   .project-card.featured .project-visual { min-height: 300px; }
   .wanam-result { width: 100%; }
+  .modflow-results { width: 100%; }
   .credential-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .availability-card { grid-column: 1 / -1; min-height: 210px; }
   .expertise-grid { grid-template-columns: repeat(2, 1fr); }
@@ -250,6 +261,9 @@ h2 { margin-bottom: 0; font-size: clamp(2.35rem, 4.2vw, 4.15rem); line-height: 1
   .wanam-visual img { padding: 8px; }
   .wanam-result { padding: 18px 10px; }
   .wanam-result img { max-height: none; }
+  .modflow-results { grid-template-columns: 1fr; padding: 12px; }
+  .modflow-results a { height: 260px; }
+  .modflow-results figure:nth-child(2) a { height: 200px; }
   .tds-visual { min-height: 785px; }
   .tds-gallery { grid-template-columns: 1fr; }
   .project-body { padding: 23px; }
